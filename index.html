@@ -8,7 +8,7 @@
   <body>
     <a-scene mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/rimshasajid09/mind-ar/stadium.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-assets>
-        <img id="stadium" src="https://cdn.jsdelivr.net/gh/rimshasajid09/mind-ar/stadium.png" />
+        <img id="stadium" src="https://cdn.jsdelivr.net/gh/rimshasajid09/mind-ar/stadium.jpg" />
         <img id="yes" src="https://cdn.jsdelivr.net/gh/rimshasajid09/mind-ar/yes.png" />
       </a-assets>
       <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable">
@@ -16,7 +16,7 @@
       <a-entity mindar-image-target="targetIndex: 0">
         <!-- <a-plane id="example-plane"  color="blue" opacity="0.5" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane> -->
         <a-plane src="#stadium" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
-        <a-plane src="#yes" class="clickable" position="0 0 0.1" height="0.552" width="1" rotation="0 0 0"></a-plane>
+        <!-- <a-plane src="#yes" class="clickable" position="0 0 0.1" height="0.552" width="1" rotation="0 0 0"></a-plane> -->
       </a-entity>
     </a-scene>
 

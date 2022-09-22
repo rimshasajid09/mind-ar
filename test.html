@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+<style>
+    * {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.wrapper {
+	height: 110vh;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	/* background-color: lightblue; */
+    /* background-image: url("stadium.png"); */
+    background-repeat: no-repeat;
+	color: #444;
+}
+
+.ball {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 200px;
+	bottom: 0;
+	left: calc(80% - 100px);
+	/* background-color: darkblue; */
+    background-image: url("ball3.png");
+    background-repeat: no-repeat;
+	border-radius: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+</style>
+<body>
+    <section class="wrapper">
+        <img src="stadium.PNG" style="width: 100%;
+        height: 100%;"></img>
+        <div class="ball"></div>
+    </section>
+    <script>
+        var bouncingBall = anime({
+	targets: '.ball',
+	translateY: '70vh',
+	duration: 300,
+	loop: false,
+	direction: 'alternate',
+	easing: 'easeInCubic',
+	scaleX: {
+		value: 1.05,
+		duration: 150,
+		delay: 268
+	}
+});
+    </script>
+</body>
+</html>
